@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>JavaScript Lab</title>
   </head>
 
   <body>
+    <div id="main-content">
+      <h1>Task Lister Lite™️</h1>
+  
+      <form id="create-task-form" action="" method="POST">
+        <label for="new-task-description">Task description:</label>
+        <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+        <input type="submit" value="Create New Task">
+      </form>
+  
+      <div id="list">
+        <h2>My Todos</h2>
+        <ul id="tasks">
+        </ul>
+      </div>
+  
+      <div id="result"></div>
+  
+      <script src="./src/index.js"></script>
     <script src="index.js"></script>
   </body>
 
